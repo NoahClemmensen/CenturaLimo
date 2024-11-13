@@ -1,0 +1,43 @@
+:root {
+  --gold: #D8A444;
+  --navy-blue-darkest: #00072D;
+  --navy-blue-dark: #051650;
+  --navy-blue: #0A2372;
+  --navy-blue-light: #123499;
+  --navy-blue-lightest: #1A43BF;
+  --deep-navy-blue: #070d14;
+
+  --secondary: #1a44c1;
+  --secondary-50: rgba(26, 68, 193, 0.5);
+
+  /* neutral */
+  --n-5: #191919;
+  --n-10: #303030;
+  --n-20: #474747;
+  --n-30: #5e5e5e;
+  --n-40: #757575;
+  --n-50: #8c8c8c;
+  --n-60: #a3a3a3;
+  --n-70: #bababa;
+  --n-80: #d1d1d1;
+  --n-90: #e8e8e8;
+  --n-95: #f3f3f3;
+  --n-98: #fafafa;
+  --n-100: #ffffff;
+
+  --surface: var(--n-95);
+
+  /* State layers */
+  --gold-triple: 216, 164, 68;
+  --gold-02: rgba(var(--gold-triple), 0.02);
+  --gold-04: rgba(var(--gold-triple), 0.04);
+  --gold-06: rgba(var(--gold-triple), 0.06);
+  --gold-08: rgba(var(--gold-triple), 0.08);
+  --gold-12: rgba(var(--gold-triple), 0.12);
+  --gold-16: rgba(var(--gold-triple), 0.16);
+  --gold-24: rgba(var(--gold-triple), 0.24);
+  --gold-32: rgba(var(--gold-triple), 0.32);
+  --gold-48: rgba(var(--gold-triple), 0.48);
+  --gold-64: rgba(var(--gold-triple), 0.64);
+  --gold-96: rgba(var(--gold-triple), 0.96);
+}

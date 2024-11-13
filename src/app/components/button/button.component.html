@@ -1,0 +1,18 @@
+<button class="btn headline-sm"
+        (click)="click.emit($event)"
+        [ngClass]="{
+          'filled': filled,
+          icon: configuration === 'icon',
+          label: configuration === 'label',
+          'icon-label': configuration === 'icon-label',
+          small: small,
+        }">
+  <ng-container *ngIf="icon">
+    <ng-container [ngTemplateOutlet]="icon"></ng-container>
+  </ng-container>
+  <ng-content select="[icon]"></ng-content>
+  <ng-container *ngIf="label">
+    <ng-container [ngTemplateOutlet]="label"></ng-container>
+  </ng-container>
+  <ng-content></ng-content>
+</button>

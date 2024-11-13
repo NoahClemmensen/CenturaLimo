@@ -1,0 +1,113 @@
+<div id="landing" class="elevation-10">
+  <div class="wrapper">
+    <app-navigation style="z-index: 2000" />
+    <div id="intro">
+      <span class="display-lg header def-pointer center-text" style="">Centura</span>
+      <span id="catch" class="headline-lg def-pointer">
+        EXPERIENCE LUXURY LIKE NEVER BEFORE
+      </span>
+      <app-button configuration="icon" class="scroll-btn" (click)="scrollToElement(services)">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.88 80.593" xml:space="preserve">
+          <g>
+            <polygon fill="currentColor" points="122.88,0 122.88,30.82 61.44,80.593 0,30.82 0,0 61.44,49.772 122.88,0"/>
+          </g>
+        </svg>
+      </app-button>
+    </div>
+  </div>
+  <div class="ribbon"></div>
+</div>
+
+<section id="services" #services class="elevation-10">
+  <div class="middle">
+    <span class="display-md center-text">Our services</span>
+    <div class="columns title-md">
+      <app-service-card>
+        <img img ngSrc="/images/opendoor.jpg" height="437.5" width="350"/>
+        <span title class="headline-md title">Luxury Limousine Services</span>
+        For airport transfers, corporate events, and special occasions. Travel in comfort and style.
+      </app-service-card>
+      <app-service-card>
+        <img img ngSrc="/images/gangsta.jpg" height="437.5" width="350"/>
+        <span title class="headline-md title">Event Transport Packages</span>
+        Customized transport for any event—reach your destination comfortably and in style.
+      </app-service-card>
+      <app-service-card>
+        <img img ngSrc="/images/garage.jpg" height="437.5" width="350"/>
+        <span title class="headline-md title">Special Requests</span>
+        Planning something unique? Let us know, and we'll tailor our services to your needs.
+      </app-service-card>
+    </div>
+  </div>
+  <div class="ribbon"></div>
+  <app-button configuration="icon" class="scroll-btn" (click)="scrollToElement(gallery)">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.88 80.593" xml:space="preserve">
+          <g>
+            <polygon fill="currentColor" points="122.88,0 122.88,30.82 61.44,80.593 0,30.82 0,0 61.44,49.772 122.88,0"/>
+          </g>
+        </svg>
+  </app-button>
+</section>
+
+<section id="gallery" #gallery class="elevation-10">
+  <div class="ribbon"></div>
+  <app-button configuration="icon" class="scroll-btn" (click)="scrollToElement(chooseUs)">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.88 80.593" xml:space="preserve">
+          <g>
+            <polygon fill="currentColor" points="122.88,0 122.88,30.82 61.44,80.593 0,30.82 0,0 61.44,49.772 122.88,0"/>
+          </g>
+        </svg>
+  </app-button>
+  <span class="display-md">The Centura Experience</span>
+  <svg style="width: 200px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 14.02">
+    <path fill="var(--gold)" class="cls-1" d="M124.7,6.07L137.8.08c.19-.09.39-.1.58-.06l36.83,6.05h5.92l1.28-1.38,2.15-2.31h.02l2.14,2.31,1.28,1.38h1.12l.68-.73,1.55-1.67h.01l1.55,1.67.68.73h5.49c.51,0,.92.42.92.94s-.41.94-.92.94h-5.49l-.68.73-1.55,1.67h-.01l-1.55-1.67-.68-.73h-1.12l-1.28,1.38-2.14,2.31h-.02l-2.15-2.31-1.28-1.38h-5.92l-36.89,6.06c-.18.03-.36,0-.52-.07l-13.11-5.99h-21.27l-1.28,1.38-2.14,2.31h-.02l-2.14-2.31-1.28-1.38h-21.27l-13.11,5.99c-.16.07-.34.1-.52.07L24.79,7.94h-5.89l-1.28,1.38-2.15,2.31h-.02l-2.14-2.31-1.28-1.38h-1.12l-.68.73-1.55,1.67h-.01l-1.55-1.67-.68-.73H.92c-.51,0-.92-.42-.92-.94s.41-.94.92-.94h5.52l.68-.73,1.55-1.67h.01l1.55,1.67.68.73h1.12l1.28-1.38,2.14-2.31h.02l2.15,2.31,1.28,1.38h5.89L61.62.02c.19-.04.39-.03.58.06l13.11,5.99h21.27l1.28-1.38,2.14-2.31h.02l2.14,2.31,1.28,1.38h21.27ZM35.37,6.07h35.02l-9.26-4.17-25.76,4.17h0ZM129.61,6.07h35.02l-25.76-4.17-9.26,4.17h0ZM164.63,7.95h-35.02l9.26,4.17,25.76-4.17h0ZM70.39,7.95h-35.02l25.76,4.17,9.26-4.17Z"/>
+  </svg>
+  <app-image-carousel style="width: 100%" [images]="images"></app-image-carousel>
+</section>
+
+<section id="choose-us" #chooseUs class="elevation-10">
+  <div class="ribbon"></div>
+  <app-button configuration="icon" class="scroll-btn" (click)="scrollToElement(chooseUs)">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.88 80.593" xml:space="preserve">
+          <g>
+            <polygon fill="currentColor" points="122.88,0 122.88,30.82 61.44,80.593 0,30.82 0,0 61.44,49.772 122.88,0"/>
+          </g>
+        </svg>
+  </app-button>
+  <div class="columns">
+    <div class="middle">
+      <span class="display-md center-text">Why choose us?</span>
+      <div class="columns body-lg">
+        <div style="display: flex; flex-direction: column; gap: 24px">
+          <div class="combination">
+            <span class="headline-md">Unique vehicle</span>
+            <img ngSrc="/images/sidelakereflection.jpg" height="437.5" width="350" alt="Back side of centura"/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor nisi nibh, vel dignissim diam dignissim vitae. Morbi gravida nisi libero, nec ornare tortor iaculis quis. Quisque lobortis sem turpis, quis volutpat diam hendrerit sed. Vivamus id vulputate turpis. Praesent eu sem pharetra, egestas augue et, iaculis ipsum. Proin posuere magna non dignissim porttitor. In sed dui diam.
+          </div>
+          <div class="combination">
+            <span class="headline-md">Tailored Services</span>
+            Nam facilisis felis purus, id ultricies magna volutpat id. Maecenas volutpat, est at malesuada sollicitudin, metus nisl pharetra libero, nec elementum dui lectus consectetur mi. Mauris orci quam, ullamcorper ac enim ullamcorper, cursus fringilla urna. Mauris laoreet odio ornare, egestas nibh ut, lacinia tellus. Phasellus aliquam id diam a blandit. Duis vestibulum mauris sit amet varius auctor. Donec dapibus lorem in mattis lacinia. Etiam iaculis cursus condimentum. Mauris vitae aliquam tortor.        </div>
+        </div>
+        <div>
+          <div class="combination">
+            <span class="headline-md">Professional and Personal Touch</span>
+            Praesent vel turpis sit amet velit efficitur laoreet id sed magna. Ut nibh sapien, posuere vel erat non, tincidunt pellentesque urna. Nulla convallis rutrum ligula, vel porta erat condimentum eget. Duis eget enim in sem placerat mattis. Nam feugiat posuere purus, quis scelerisque sem scelerisque a. Donec vel dui facilisis, sollicitudin est eget, porta ante. In hac habitasse platea dictumst. Etiam laoreet nunc sodales vulputate luctus. Maecenas dolor elit, fringilla eget pellentesque vel, faucibus nec odio. Maecenas euismod imperdiet commodo. Nunc tempus interdum ex. Nam ut elit enim.
+            <img ngSrc="/images/backshine.jpg" height="437.5" width="350" alt="Back side of centura"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle">
+      <span class="display-md center-text">Ready to Ride in Luxury?</span>
+
+    </div>
+    <div class="middle">
+      <span class="display-md center-text">What our Clients Say</span>
+
+    </div>
+  </div>
+
+</section>
+
+
+

@@ -1,0 +1,73 @@
+.btn {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+
+  border-radius: 100px;
+
+  padding: 8px 16px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all var(--transition-speed) ease;
+  cursor: pointer;
+}
+
+.btn.small {
+  border-radius: 12px;
+}
+
+.btn.icon {
+  padding: 8px;
+}
+
+.btn.small.icon {
+  padding: 4px;
+}
+
+.btn.label {
+  padding: 8px 16px;
+}
+
+.btn.small.label {
+  padding: 4px 8px;
+}
+
+.btn.icon-label {
+  padding: 8px 16px 8px 12px;
+}
+
+.btn.small.icon-label {
+  padding: 4px 8px 4px 6px;
+}
+
+.btn.filled {
+  color: var(--surface);
+  border: none;
+  background: var(--gold);
+}
+
+.btn:hover {
+  box-shadow: var(--elevation-1);
+  text-shadow: var(--elevation-1);
+  background: var(--gold-16);
+}
+
+.btn:hover svg {
+  filter: drop-shadow(var(--elevation-1));
+}
+
+.btn:active {
+  box-shadow: var(--elevation-0);
+  background: var(--gold-32);
+}
+
+.btn:focus {
+  background: var(--gold-32);
+}
+
+.btn:active svg {
+  filter: drop-shadow(var(--elevation-0));
+}

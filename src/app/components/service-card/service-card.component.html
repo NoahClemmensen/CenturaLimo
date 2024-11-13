@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="card radius-2">
+    <img *ngIf="image" [ngSrc]="image" height="437.5" width="350" alt="Service image"/>
+    <ng-content select="[img]"></ng-content>
+    <div class="body">
+      <span *ngIf="title" class="headline-md">
+        {{ title }}
+        <ng-content select="[title"></ng-content>
+    </span>
+      <span *ngIf="description" class="card-body">
+      {{ description }}
+    </span>
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <app-button configuration="label">Learn more</app-button>
+</div>
+

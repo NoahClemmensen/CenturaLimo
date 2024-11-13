@@ -1,0 +1,101 @@
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.image-container {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: visible;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 4rem;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    padding: 4rem 0;
+  }
+}
+
+.image-container::-webkit-scrollbar {
+  display: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 0 4rem;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+
+}
+
+#left {
+  left: 5%;
+  transform: rotate(90deg);
+}
+
+#right {
+  right: 5%;
+  transform: rotate(-90deg);
+}
+
+.image {
+  transition: all var(--transition-speed) ease;
+  box-shadow: var(--elevation-4);
+  position: relative;
+  height: 875px;
+  width: 700px;
+}
+
+.image:hover {
+  box-shadow: var(--elevation-10);
+}
+
+img {
+  transition: all var(--transition-speed) ease;
+}
+
+img:hover {
+  transform: scale(1.01);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 25%);
+  color: white;
+  z-index: 100;
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all var(--transition-speed) ease;
+}
+
+.image:hover .image-text {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.01);
+}

@@ -1,0 +1,162 @@
+.def-pointer {
+  cursor: default;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.ribbon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 15px;
+
+  background: var(--gold);
+}
+
+.scroll-btn {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 100;
+}
+
+section {
+  min-height: calc(100% - 79px);
+  position: relative;
+}
+
+
+/* Landing section */
+#landing {
+  background: url('/images/downlow.jpg') no-repeat center center/cover;
+
+  z-index: 6;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  height: calc(100% - 79px);
+  color: var(--gold);
+}
+
+#landing .wrapper {
+  margin-top: 64px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#intro {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#intro .header {
+  font-family: Hermaiona, sans-serif !important;
+  line-height: 15rem;
+  font-size: 15rem;
+  font-weight: 200;
+
+  color: var(--gold);
+}
+
+#catch {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+
+  width: 200px;
+}
+
+
+
+/* Services section */
+#services {
+  background: var(--deep-navy-blue);
+  z-index: 5;
+
+  color: var(--gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3rem 0;
+  box-sizing: border-box;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.middle-column {
+  width: 350px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* Gallery section */
+#gallery {
+  z-index: 4;
+  background: var(--surface);
+
+  color: var(--deep-navy-blue);
+
+  padding: 6rem 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Choose us section */
+#choose-us {
+  background: var(--deep-navy-blue);
+  z-index: 5;
+
+  color: var(--gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
+.combination {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 350px;
+  text-align: justify;
+}
+
+.combination span {
+  text-align: left;
+}
