@@ -11,7 +11,7 @@ import {ButtonComponent} from '@app/components/button/button.component';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-  @Input({transform: booleanAttribute}) open = true;
+  @Input({transform: booleanAttribute}) open = false;
 
   public toggle() {
     this.open = !this.open;
