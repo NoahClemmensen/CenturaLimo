@@ -4,19 +4,19 @@
   font-family: 'Botera TFE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Botera TFE Regular'), url('CenturaLimo/fonts/botera/Botera-Regular.woff') format('woff');
+  src: local('Botera TFE Regular'), url('public/fonts/botera/Botera-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Botera TFE Regular Stencil';
   font-style: normal;
   font-weight: normal;
-  src: local('Botera TFE Regular Stencil'), url('CenturaLimo/fonts/botera/Botera-RegularStencil.woff') format('woff');
+  src: local('Botera TFE Regular Stencil'), url('public/fonts/botera/Botera-RegularStencil.woff') format('woff');
 }
 
 @font-face {
   font-family: Hermaiona;
-  src: url("CenturaLimo/fonts/hermaiona/hermaiona.ttf") format("truetype");
+  src: url("public/fonts/hermaiona/hermaiona.ttf") format("truetype");
 }
 
 body {
