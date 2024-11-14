@@ -1,0 +1,27 @@
+.card {
+  min-width: 350px;
+  max-width: 464px;
+  border: 1px solid var(--gold);
+  background: var(--gold-24);
+  overflow: hidden;
+  color: var(--gold);
+}
+
+.section {
+  padding: 16px;
+  display: flex;
+  gap: 6px;
+}
+
+.header {
+  border-bottom: 1px solid var(--gold);
+}
+
+.body {
+  flex-direction: column;
+}
+
+.footer {
+  border-top: 1px solid var(--gold);
+  background: var(--gold-12);
+}

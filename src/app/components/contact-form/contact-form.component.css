@@ -1,0 +1,54 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, textarea {
+  padding: 8px 12px;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  border-radius: var(--radius-2);
+  width: 320px;
+
+  transition: border var(--transition-speed) ease;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:hover, textarea:hover {
+  border-color: rgba(25, 25, 25, 0.25);
+}
+
+input:active, textarea:active,
+input:focus, textarea:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.input-group.error input {
+  border-color: var(--error);
+  background: var(--error-container);
+  color: var(--on-error-container);
+}
+
+.input-group span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--error);
+}

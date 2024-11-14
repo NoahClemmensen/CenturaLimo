@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 28px;
   align-items: center;
+  position: relative;
 }
 
 .card {
@@ -11,11 +12,27 @@
   background: var(--gold-24);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-
+  cursor: pointer;
+  position: relative;
   border: 1px solid var(--gold);
-
+  overflow: hidden;
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.backdrop {
+  position: absolute;
+  top: -20rem;
+  right: -12rem;
+  bottom: -12rem;
+  left: -12rem;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(7,13,20,0) 50%);
+  z-index: -1;
+  opacity: 0;
+  transition: all var(--transition-speed) ease;
+}
+
+.card:hover ~ .backdrop {
+  opacity: 1;
 }
 
 .body {

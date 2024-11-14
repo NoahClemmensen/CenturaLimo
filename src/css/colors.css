@@ -1,14 +1,35 @@
 :root {
   --gold: #D8A444;
-  --navy-blue-darkest: #00072D;
-  --navy-blue-dark: #051650;
-  --navy-blue: #0A2372;
-  --navy-blue-light: #123499;
-  --navy-blue-lightest: #1A43BF;
   --deep-navy-blue: #070d14;
 
   --secondary: #1a44c1;
   --secondary-50: rgba(26, 68, 193, 0.5);
+
+  /* error */
+  --e-5: #260909;
+  --e-10: #3f0f0e;
+  --e-20: #591514;
+  --e-30: #84201e;
+  --e-40: #be2e2b;
+  --e-50: #fd3d39;
+  --e-60: #fd6461;
+  --e-70: #fe8b88;
+  --e-80: #feb1b0;
+  --e-90: #ffd8d7;
+  --e-95: #ffeceb;
+  --e-98: #fff5f5;
+  --e-100: #ffffff;
+
+  --error: var(--e-40);
+  --on-error: var(--e-100);
+
+  --error-container: var(--e-90);
+  --on-error-container: var(--e-20);
+
+  --error-fixed: var(--e-90);
+  --error-fixed-dim: var(--e-80);
+  --on-error-fixed: var(--e-20);
+  --on-error-fixed-dim: var(--e-30);
 
   /* neutral */
   --n-5: #191919;

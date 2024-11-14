@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
 
-  transition: background-color var(--transition-speed) ease;
+  transition: all var(--transition-speed) ease;
 }
 
 .navigation.is-scrolled {
@@ -42,4 +42,10 @@ button {
 
 .nav-item:hover {
   border-bottom: 1px solid var(--gold);
+}
+
+#fancy {
+  font-family: Hermaiona, sans-serif;
+  font-size: 2rem;
+  font-weight: 575;
 }

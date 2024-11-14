@@ -1,0 +1,89 @@
+footer {
+  z-index: 3;
+  color: var(--deep-navy-blue);
+  display: flex;
+  background-color: var(--gold);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -10px 10px rgba(25, 25, 25, 0.1),
+  0 -4px 6px 0 rgba(25, 25, 25, 0.3);
+
+  padding: 4rem 20%;
+}
+
+.splitter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 128px;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.terms, .icons, .icon {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.icons {
+  justify-content: end;
+}
+
+.icons a {
+  border: 1px solid var(--deep-navy-blue);
+  border-radius: 100px;
+  height: 15px;
+  padding: 12px;
+  box-shadow: var(--elevation-0);
+  transition: box-shadow var(--transition-speed) ease;
+}
+
+.icons a:hover {
+  box-shadow: var(--elevation-1);
+}
+
+.icons a:active {
+  box-shadow: var(--elevation-0);
+}
+
+.icons a svg {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.terms a {
+  height: fit-content;
+}
+
+.icon {
+  font-family: Hermaiona, sans-serif;
+  font-size: 3rem;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--deep-navy-blue);
+}

@@ -4,14 +4,14 @@
   font-family: 'Botera TFE Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Botera TFE Regular'), url('/fonts/heldane/Botera-Regular.woff') format('woff');
+  src: local('Botera TFE Regular'), url('/fonts/botera/Botera-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Botera TFE Regular Stencil';
   font-style: normal;
   font-weight: normal;
-  src: local('Botera TFE Regular Stencil'), url('/fonts/heldane/Botera-RegularStencil.woff') format('woff');
+  src: local('Botera TFE Regular Stencil'), url('/fonts/botera/Botera-RegularStencil.woff') format('woff');
 }
 
 @font-face {
@@ -46,24 +46,14 @@ input, textarea, button {font-family: inherit}
   --elevation-0: none;
   --elevation-1: 0 1px 2px 0 rgba(25, 25, 25, 0.3),
   0 1px 3px 1px rgba(25, 25, 25, 0.15);
-  --elevation-1-inverted: 0 1px 2px 0 rgba(255, 255, 255, 0.3),
-  0 1px 3px 1px rgba(255, 255, 255, 0.15);
   --elevation-2: 0 1px 2px 0 rgba(25, 25, 25, 0.3),
   0 2px 6px 2px rgba(25, 25, 25, 0.15);
-  --elevation-2-inverted: 0 1px 2px 0 rgba(255, 255, 255, 0.3),
-  0 2px 6px 2px rgba(255, 255, 255, 0.15);
   --elevation-3: 0 4px 8px 3px rgba(25, 25, 25, 0.15),
   0 1px 3px 0 rgba(25, 25, 25, 0.3);
-  --elevation-3-inverted: 0 4px 8px 3px rgba(255, 255, 255, 0.15),
-  0 1px 3px 0 rgba(255, 255, 255, 0.3);
   --elevation-4: 0 6px 10px 4px rgba(25, 25, 25, 0.15),
   0 2px 3px 0 rgba(25, 25, 25, 0.3);
-  --elevation-4-inverted: 0 6px 10px 4px rgba(255, 255, 255, 0.15),
-  0 2px 3px 0 rgba(255, 255, 255, 0.3);
   --elevation-10: 0 10px 20px 5px rgba(25, 25, 25, 0.5),
   0 4px 6px 0 rgba(25, 25, 25, 0.3);
-  --elevation-10-inverted: 0 10px 20px 5px rgba(255, 255, 255, 0.5),
-  0 4px 6px 0 rgba(255, 255, 255, 0.3);
 
   --radius-1: 8px;
   --radius-2: 12px;
@@ -79,19 +69,9 @@ input, textarea, button {font-family: inherit}
   box-shadow: var(--elevation-1);
 }
 
-.elevation-1-inverted {
-  /* M1/elevation/1 */
-  box-shadow: var(--elevation-1-inverted);
-}
-
 .elevation-2 {
   /* M1/elevation/2 */
   box-shadow: var(--elevation-2);
-}
-
-.elevation-2-inverted {
-  /* M1/elevation/2 */
-  box-shadow: var(--elevation-2-inverted);
 }
 
 .elevation-3 {
@@ -99,29 +79,14 @@ input, textarea, button {font-family: inherit}
   box-shadow: var(--elevation-3);
 }
 
-.elevation-3-inverted {
-  /* M1/elevation/3 */
-  box-shadow: var(--elevation-3-inverted);
-}
-
 .elevation-4 {
   /* M1/elevation/4 */
   box-shadow: var(--elevation-4);
 }
 
-.elevation-4-inverted {
-  /* M1/elevation/4 */
-  box-shadow: var(--elevation-4-inverted);
-}
-
 .elevation-10 {
   /* M1/elevation/10 */
   box-shadow: var(--elevation-10);
-}
-
-.elevation-10-inverted {
-  /* M1/elevation/10 */
-  box-shadow: var(--elevation-10-inverted);
 }
 
 /* Corner radius's */
