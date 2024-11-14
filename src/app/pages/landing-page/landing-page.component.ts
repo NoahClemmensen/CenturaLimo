@@ -40,16 +40,16 @@ export class LandingPageComponent {
   }
 
   protected images: { path: string, text?: string }[] = [
-    { path: 'CenturaLimo/images/wheel.jpg', text: 'The centura is equipped with 3-piece wheels with gold bolts and a spinner badge.' },
-    { path: 'CenturaLimo/images/cloth.jpg', text: 'The comfortable cloth inside, on the seats, to keep you warm and the wool seats clean' },
-    { path: 'CenturaLimo/images/inside.jpg', text: 'The inside of the centura, with a center console and wool upholstery' },
-    { path: 'CenturaLimo/images/gangsta.jpg', text: 'A customers experience with our services' },
-    { path: 'CenturaLimo/images/gangstainside.jpg' },
-    { path: 'CenturaLimo/images/gangstasmoke.jpg' },
-    { path: 'CenturaLimo/images/opendoor.jpg' },
-    { path: 'CenturaLimo/images/downlow.jpg', text: 'The centura from a low angle, showing the wheels and the side of the car' },
-    { path: 'CenturaLimo/images/sideview.jpg' },
-    { path: 'CenturaLimo/images/lowbehind.jpg' },
+    { path: '/images/wheel.jpg', text: 'The centura is equipped with 3-piece wheels with gold bolts and a spinner badge.' },
+    { path: '/images/cloth.jpg', text: 'The comfortable cloth inside, on the seats, to keep you warm and the wool seats clean' },
+    { path: '/images/inside.jpg', text: 'The inside of the centura, with a center console and wool upholstery' },
+    { path: '/images/gangsta.jpg', text: 'A customers experience with our services' },
+    { path: '/images/gangstainside.jpg' },
+    { path: '/images/gangstasmoke.jpg' },
+    { path: '/images/opendoor.jpg' },
+    { path: '/images/downlow.jpg', text: 'The centura from a low angle, showing the wheels and the side of the car' },
+    { path: '/images/sideview.jpg' },
+    { path: '/images/lowbehind.jpg' },
   ];
 
   protected testimonies: { name: string, text: string, title: string, rating: 1|2|3|4|5 }[] = [
