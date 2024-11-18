@@ -72,6 +72,7 @@ export class ContactFormComponent {
 
     this.name.nativeElement.value = '';
     this.email.nativeElement.value = '';
+    this.message.nativeElement.value = '';
 
     console.log('Form submitted with name: ' + name + ', email: ' + email + ', and text: ' + text);
   }
